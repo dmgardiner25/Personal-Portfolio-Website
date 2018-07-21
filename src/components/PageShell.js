@@ -9,7 +9,7 @@ const PageShell = Page => {
         transitionAppearTimeout={600}
         transitionEnterTimeout={600}
         transitionLeaveTimeout={200}
-        transitionName={'SlideIn'}>
+        transitionName={props.match.path === '/projects' ? 'SlideIn' : 'SlideOut'}>
         <Page {...props} />
       </ReactCSSTransitionGroup>
     </div>;

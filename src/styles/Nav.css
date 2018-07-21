@@ -1,0 +1,63 @@
+.Nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.nav-item {
+  max-width: 50%;
+}
+
+.logo {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: 1px solid rgb(196, 196, 196);
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: black;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.logo:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: #B5C9D4;
+}
+
+.link {
+  padding-right: 50px;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: rgb(131, 131, 131);
+}
+
+.link:visited {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+
+.link p:hover {
+  text-shadow: 2px 2px 2px #B5C9D4;
+}
+
+.active {
+  text-shadow: 2px 2px 2px #B5C9D4;
+}
+
+.active p:hover {
+  text-shadow: 2px 2px 2px #FD7E47
+}
