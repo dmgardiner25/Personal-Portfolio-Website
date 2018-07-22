@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import './../styles/Home.css'
+import { Helmet } from 'react-helmet';
+import './../styles/Home.css';
 
 class Home extends React.Component {
   render() {
     return (
       <div className='home'>
+      <Helmet>
+        <title>David Gardiner | Home</title>
+      </Helmet>
         <ReactCSSTransitionGroup
           transitionAppear={true}
           transitionAppearTimeout={600}
