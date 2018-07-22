@@ -18,7 +18,14 @@ class Home extends React.Component {
           transitionName={'SlideIn'}>
           <HomeContent />
         </ReactCSSTransitionGroup>
-        <img className='splash' src={require('./../images/san_fran_2.JPG')} alt='splash'/>
+        <ReactCSSTransitionGroup
+          transitionAppear={true}
+          transitionAppearTimeout={600}
+          transitionEnterTimeout={600}
+          transitionLeaveTimeout={200}
+          transitionName={'SlideOut'}>
+          <img className='splash' src={require('./../images/san_fran_2.JPG')} alt='splash'/>
+        </ReactCSSTransitionGroup>
       </div>
     );
   }
