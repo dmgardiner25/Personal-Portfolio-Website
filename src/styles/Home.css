@@ -14,8 +14,8 @@
   position: relative;
   z-index: 3;
   top: 90px;
-  display: flex;
   right: 2%;  
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -31,4 +31,17 @@
   -webkit-box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.75);
+}
+
+.home p {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  z-index: 3;
+  right: -1%;
+  margin-top: 42%;
+}
+
+.home a:visited {
+  color: white;
 }
