@@ -24,6 +24,10 @@
   margin-right: 10px;
 }
 
+.name {
+  text-shadow: 3px 3px 3px #B5C9D4;
+}
+
 .profile {
   width: 200px;
   z-index: 2;
