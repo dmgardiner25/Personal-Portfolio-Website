@@ -25,7 +25,7 @@ class HomeContent extends React.Component {
     return (
       <div className='home-content'>
         <div className='stacked-text'>
-          <h1>Hey there, my name is David Gardiner</h1>
+          <h1>Hey there, my name is David Gardiner.</h1>
           <h2>
             I'm a Computer Science student at Missouri S&T <br />
             with a passion for anything and everything <br />
