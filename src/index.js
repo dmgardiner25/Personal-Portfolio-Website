@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Nav from './components/Nav';
-import PageShell from './components/PageShell';
+import PageTransition from './components/PageTransition';
 import Project from './components/Projects'
 import './styles/index.css';
 import registerServiceWorker from './registerServiceWorker';
@@ -14,9 +14,9 @@ ReactDOM.render(
     <div>
       <Nav />
 
-      <Route exact path="/" component={PageShell(Home)} />
-      <Route path="/about" component={PageShell(About)} />
-      <Route path="/projects" component={PageShell(Project)} />
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={PageTransition(About)} />
+      <Route path="/projects" component={PageTransition(Project)} />
     </div>
   </Router>, 
   document.getElementById('root')
