@@ -5,16 +5,20 @@ This is the repository for my personal portfolio website to showcase some of my 
 ### Installation
 
 If you would like to make a copy of the repository, run the following commands:
-1.  ```
-    git clone https://github.com/dmgardiner25/Personal-Portfolio-Website.git
-    ```
-2.  ```
-    cd "Personal-Portfolio-Website"
-    ```
-3.  ```
-    yarn
-    ```
-    or
-    ```
-    npm i
-    ```
+```
+# Clone the repository
+git clone https://github.com/dmgardiner25/Personal-Portfolio-Website.git
+
+# cd into the new directory
+cd "Personal-Portfolio-Website"
+
+# Install missing dependencies
+yarn
+# or
+npm i
+
+# Run server
+yarn start
+# or
+npm start
+```
