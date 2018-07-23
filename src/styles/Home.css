@@ -1,6 +1,7 @@
 .home {
   position: absolute;
   background-image: url('./../images/san_fran_2.JPG');
+  background: #F4F4F4;
 }
 
 .splash {
@@ -17,6 +18,7 @@
   right: 2%;  
   display: flex;
   justify-content: flex-end;
+  border: 1px solid red;
 }
 
 .stacked-text {
@@ -30,6 +32,7 @@
 
 .profile {
   width: 200px;
+  height: 200px;
   z-index: 2;
   border-radius: 100px;
   -webkit-box-shadow: 10px 10px 35px -5px rgba(0,0,0,0.75);
