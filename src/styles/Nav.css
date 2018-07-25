@@ -13,22 +13,27 @@
   z-index: 2;
 }
 
-.nav-item {
-  max-width: 50%;
+@media only screen and (max-width: 682px)  {
+  .Nav {
+    display: none;
+  }
 }
 
-.logo {
+.logo-wrapper {
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
   border-right: 1px solid rgb(196, 196, 196);
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.logo {
   font-size: 18px;
   font-weight: 800;
   text-decoration: none;
   letter-spacing: 3px;
   color: black;
-  align-self: flex-start;
-  margin-right: auto;
 }
 
 .logo:visited {
@@ -60,6 +65,16 @@
   text-shadow: 2px 2px 2px #B5C9D4;
 }
 
-.active p:hover {
-  text-shadow: 2px 2px 2px #FD7E47
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  outline-style: none;
+  -moz-outline-style: none;
+}
+
+p:active, p:focus {
+  outline: 0;
+  border: none;
+  outline-style: none;
+  -moz-outline-style: none;
 }

@@ -28,10 +28,10 @@ class Nav extends Component {
   render() {
     return (
       <div className='Nav'>
-        <Link className='logo nav-item' onClick={() => this.setActive(0, '')} to="/">DAVID GARDINER</Link>
-        <Link className={'link nav-item' + (this.state.activeTab === 0 ? ' active' : '')} onClick={() => this.setActive(0, '')} to="/"><p>HOME</p></Link>
-        <Link className={'link nav-item' + (this.state.activeTab === 1 ? ' active' : '')} onClick={() => this.setActive(1, 'about')} to="/about"><p>ABOUT</p></Link>
-        <Link className={'link nav-item' + (this.state.activeTab === 2 ? ' active' : '')} onClick={() => this.setActive(2, 'projects')} to="/projects"><p>PROJECTS</p></Link>
+        <div className='logo-wrapper'><Link className='logo' onClick={() => this.setActive(0, '')} to="/">DAVID GARDINER</Link></div>
+        <Link className={'link' + (this.state.activeTab === 0 ? ' active' : '')} onClick={() => this.setActive(0, '')} to="/"><p>HOME</p></Link>
+        <Link className={'link' + (this.state.activeTab === 1 ? ' active' : '')} onClick={() => this.setActive(1, 'about')} to="/about"><p>ABOUT</p></Link>
+        <Link className={'link' + (this.state.activeTab === 2 ? ' active' : '')} onClick={() => this.setActive(2, 'projects')} to="/projects"><p>PROJECTS</p></Link>
       </div>
     );
   }

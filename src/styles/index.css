@@ -12,6 +12,58 @@ body {
   background: #F4F4F4;
 }
 
+.right-arrow {
+  display: none;
+}
+
+.social-media {
+  float: left;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.social-media img {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  width: 36px;
+  height: 36px;
+}
+
+@media only screen and (max-width: 682px)  {
+  .right-arrow {
+    position: absolute;
+    z-index: 3;
+    top: 45%;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  .display-arrow {
+    display: inherit;
+  }
+
+  .hide-arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 600px)  {
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-height: 550px)  {
+  .social-media img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .SlideIn-appear {
   transform: translateX(30px);
   -webkit-transform: translateX(30px);

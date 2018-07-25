@@ -7,9 +7,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className='home'>
-      <Helmet>
-        <title>David Gardiner | Home</title>
-      </Helmet>
+        <Helmet>
+          <title>David Gardiner | Home</title>
+        </Helmet>
         <ReactCSSTransitionGroup
           transitionAppear={true}
           transitionAppearTimeout={600}
@@ -18,14 +18,7 @@ class Home extends React.Component {
           transitionName={'SlideIn'}>
           <HomeContent />
         </ReactCSSTransitionGroup>
-        <ReactCSSTransitionGroup
-          transitionAppear={true}
-          transitionAppearTimeout={600}
-          transitionEnterTimeout={600}
-          transitionLeaveTimeout={200}
-          transitionName={'SlideOut'}>
-          <img className='splash' src={require('./../images/san_fran_2.JPG')} alt='splash'/>
-        </ReactCSSTransitionGroup>
+        <p>Like this photo? Check out more of Amanda Frazier's work <a target="_blank" rel="noopener noreferrer" href="http://amandafrazierwebdev.com">here</a>.</p>
       </div>
     );
   }
@@ -44,7 +37,6 @@ class HomeContent extends React.Component {
           </h2>
         </div>
         <img className='profile' src={require('./../images/suit_green_cropped.jpg')} alt='profile'/>
-        <p>Like this photo? Check out more of Amanda Frazier's work <a target="_blank" rel="noopener noreferrer" href="http://amandafrazierwebdev.com">here</a>.</p>
       </div>
     );
   }

@@ -1,0 +1,9 @@
+.about {
+  position: absolute;
+}
+
+.about-content {
+  position: relative;
+  z-index: 3;
+  top: 90px;
+}
