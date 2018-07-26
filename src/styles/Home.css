@@ -1,5 +1,5 @@
 .home {
-  background-image: url('./../images/san_fran_2.JPG');
+  background-image: url('./../images/Optimized-san_fran_2-min.JPG');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -97,7 +97,7 @@
   .stacked-text {
     position: absolute;
     text-align: center;
-    top: 100%; 
+    top: 100%;
     color: white;
     text-shadow: 1px 1px 1px black;
     max-width: 75%;
