@@ -2,7 +2,7 @@
 // header on that server.
 export function loadpdf() {
 
-  var url = '//dmgardiner.com/resume.pdf';
+  var url = '//cors-anywhere.herokuapp.com/http://dmgardiner.com/resume.pdf';
   
   // Loaded via <script> tag, create shortcut to access PDF.js exports.
   var pdfjsLib = window['pdfjs-dist/build/pdf'];
