@@ -16,22 +16,22 @@ class Nav extends Component {
     var tabNum = 0;
     if(path === '/about')
       tabNum = 1;
-    else if(path === '/projects')
+    else if(path === '/resume')
       tabNum = 2;
     this.setState({ activeTab: tabNum })
   }
 
-  setActive = (tabNum, currUrl) => {
+  setActive = (tabNum) => {
     this.setState({ activeTab: tabNum });
   }
 
   render() {
     return (
       <div className='Nav'>
-        <div className='logo-wrapper'><Link className='logo' onClick={() => this.setActive(0, '')} to="/">DAVID GARDINER</Link></div>
-        <Link className={'link' + (this.state.activeTab === 0 ? ' active' : '')} onClick={() => this.setActive(0, '')} to="/"><p>HOME</p></Link>
-        <Link className={'link' + (this.state.activeTab === 1 ? ' active' : '')} onClick={() => this.setActive(1, 'about')} to="/about"><p>ABOUT</p></Link>
-        <Link className={'link' + (this.state.activeTab === 2 ? ' active' : '')} onClick={() => this.setActive(2, 'projects')} to="/projects"><p>PROJECTS</p></Link>
+        <div className='logo-wrapper'><Link className='logo' onClick={() => this.setActive(0)} to="/">DAVID GARDINER</Link></div>
+        <Link className={'link' + (this.state.activeTab === 0 ? ' active' : '')} onClick={() => this.setActive(0)} to="/"><p>HOME</p></Link>
+        <Link className={'link' + (this.state.activeTab === 1 ? ' active' : '')} onClick={() => this.setActive(1)} to="/about"><p>ABOUT</p></Link>
+        <Link className={'link' + (this.state.activeTab === 2 ? ' active' : '')} onClick={() => this.setActive(2)} to="/resume"><p>RESUME</p></Link>
       </div>
     );
   }
