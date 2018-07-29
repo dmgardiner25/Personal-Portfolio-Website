@@ -1,6 +1,10 @@
 .resume {
-  padding-bottom: 4%;
-  height: 180vh;
+  position: absolute;
+  top: 40px;
+  bottom: -17px;
+  left: 0;
+  right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+  overflow-y: scroll;
   background: #f4f4f4;
 }
 
@@ -13,6 +17,7 @@
   top: 70px;
   min-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 50px;
   -webkit-box-shadow: 0px 0px 35px 1px rgba(199,199,199,1);
   -moz-box-shadow: 0px 0px 35px 1px rgba(199,199,199,1);
   box-shadow: 0px 0px 35px 1px rgba(199,199,199,1);
