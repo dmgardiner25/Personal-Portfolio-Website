@@ -10,7 +10,7 @@
   justify-content: center;
   background: white;
   position: fixed;
-  z-index: 2;
+  z-index: 10000;
 }
 
 @media only screen and (max-width: 682px)  {
@@ -49,12 +49,12 @@
   padding-right: 50px;
   text-decoration: none;
   letter-spacing: 3px;
-  color: rgb(131, 131, 131);
+  color: #838383;
 }
 
 .link:visited {
   text-decoration: none;
-  color: rgb(131, 131, 131);
+  color: #838383;
 }
 
 .link p:hover {
