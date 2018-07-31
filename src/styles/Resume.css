@@ -3,11 +3,12 @@
   top: 0px;
   bottom: -17px;
   left: 0;
-  right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+  right: -17px;
   overflow-y: scroll;
-  background: #f4f4f4;
+  background: #fff;
 }
 
 .resume {
   width: 100%;
+  padding: 50px;
 }
