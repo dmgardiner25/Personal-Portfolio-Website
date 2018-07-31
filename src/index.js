@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Nav from './components/Nav';
@@ -33,10 +33,13 @@ ReactDOM.render(
         <a href='mailto:dmgardiner25@gmail.com' target='_blank' rel="noopener noreferrer"><img src={require('./images/close-envelope.png')} alt='email'/></a>
         <a href='https://www.facebook.com/davy.gardiner.5' target='_blank' rel="noopener noreferrer"><img src={require('./images/facebook-logo.png')} alt='facebook'/></a>
       </div>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={PageTransition(About)} />
-      <Route path="/resume" component={Resume} />
-      <Route path="/chill" component={() => window.location = 'http://dmgardiner.com/Chill'} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={PageTransition(About)} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/chill" component={() => window.location = 'http://dmgardiner.com/Chill'} />
+        <Route component={Home}/>
+        </Switch>
     </div>
   </Router>,
   document.getElementById('root')
