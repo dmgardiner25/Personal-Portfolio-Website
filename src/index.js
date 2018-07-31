@@ -36,6 +36,7 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route path="/about" component={PageTransition(About)} />
       <Route path="/resume" component={Resume} />
+      <Route path="/chill" component={() => window.location = 'http://dmgardiner.com/Chill'} />
     </div>
   </Router>,
   document.getElementById('root')
