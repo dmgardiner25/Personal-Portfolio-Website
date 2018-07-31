@@ -1,0 +1,38 @@
+{ "entries": [
+  {
+    "year": 1998,
+    "detail": "Baby David was born."
+  },
+  {
+    "year": 2001,
+    "detail": "My first memories of messing around on our home computer."
+  },
+  {
+    "year": 2004,
+    "detail": "Began fixing computers with my great grandfather. <br /><br />\"Did he say <em>great</em> grandfather?\" Yes, yes I did."
+  },
+  {
+    "year": 2012,
+    "detail": "Freshman year of high school, I was introduced to the world of programming and instantly fell in love. Started off with learning Java on my own (to make video games, naturally)."
+  },
+  {
+    "year": 2013,
+    "detail": "A senior friend told me about Missouri S&T long before I even thought about college and the idea of one of the best Midwestern tech schools that was only two hours from home sounded great."
+  },
+  {
+    "year": 2014,
+    "detail": "My first programming class with Scratch, QBasic, and Visual Basic. This was by far the class that I have found to be <del>most<\/del> least relevant."
+  },
+  {
+    "year": 2015,
+    "detail": "I applied to Missouri S&T and got accepted for the Computer Science program. Also took AP Computer Science and solidified my programming foundation further with Java."
+  },
+  {
+    "year": 2016,
+    "detail": "Began my journey at S&T."
+  },
+  {
+    "year": 2018,
+    "detail": "Joined ACM SIG.com at the beginning of the spring semester and interned at RGA as a software development engineer intern during the summer."
+  }
+]}

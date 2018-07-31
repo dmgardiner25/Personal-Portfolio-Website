@@ -1,0 +1,22 @@
+{ "experiences": [
+  {
+    "org": "Reinsurance Group of America, Incorporated",
+    "dates": "June - August 2018",
+    "position": "Software Development Engineer Intern"
+  },
+  {
+    "org": "ACM SIG.com",
+    "dates": "January 2018 - Present",
+    "position": "Web Developer"
+  },
+  {
+    "org": "ACM SIG-Game",
+    "dates": "January - May 2017",
+    "position": "AI Developer"
+  },
+  {
+    "org": "Mars Rover Design Team",
+    "dates": "August - December 2016",
+    "position": "Embedded Programmer"
+  }
+]}

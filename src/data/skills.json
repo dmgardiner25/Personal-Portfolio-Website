@@ -1,0 +1,18 @@
+{ "skills": [
+  {
+    "title": "Languages",
+    "list": ["C++", "Java", "HTML", "CSS", "JavaScript", "SQL", "Python", "C#"]
+  },
+  {
+    "title": "Frameworks",
+    "list": ["React", "Node.js", "Vue.js", "Django"]
+  },
+  {
+    "title": "Software",
+    "list": ["Git", "Bash", "Windows", "Ubuntu", "Microsoft Office", "Microsoft TFS"]
+  },
+  {
+    "title": "Other",
+    "list": ["Agile/Scrum", "Public Speaking", "Leadeship", "Volunteering"]
+  }
+]}

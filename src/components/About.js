@@ -1,5 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import entries from './../data/entries.json';
+import experiences from './../data/experiences.json';
+import projects from './../data/projects.json';
+import skills from './../data/skills';
 import './../styles/About.css'
 
 class About extends React.Component {
@@ -21,7 +25,7 @@ class About extends React.Component {
             for fairly recently.
           </p>
           <h2 className='sub-header'>THE FUN STUFF</h2>
-          <p className='body-text'>
+          <div className='body-text'>
             When I'm not working or studying for school, you can usually find me working on my own projects or working on the website
             for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
             ACM SIG.com. Outside of the world of Computer Science, I enjoy casually playing video games, listening to music, and
@@ -44,138 +48,114 @@ class About extends React.Component {
               <li>I have a one year old English Cocker Spaniel named Ramsey.
               </li>
             </ul>
-          </p>
-          <h2 className='sub-header'>HISTORY</h2>
-          <div class="wrapper">
-            <div class="timeline">
-              <dl class="entry">
-                <dt class="entry-title">1998</dt>
-                <dd class="entry-detail">Baby David was born.</dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2001</dt>
-                <dd class="entry-detail">My first memories of messing around on our home computer.</dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2004</dt>
-                <dd class="entry-detail">Began fixing computers with my great grandfather. <br /><br />"Did he say <em>great</em> grandfather?" Yes, yes I did.</dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2012</dt>
-                <dd class="entry-detail">Freshman year of high school, I was introduced to the world of programming and
-                  instantly fell in love. Started off with learning Java on my own (to make video games, naturally).
-                </dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2013</dt>
-                <dd class="entry-detail">A senior friend told me about Missouri S&T long before I even thought about college and
-                  the idea of one of the best Midwestern tech schools that was only two hours from home sounded great.
-                </dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2014</dt>
-                <dd class="entry-detail">My first programming class with Scratch, QBasic, and Visual Basic. This was by far the
-                  class that I have found to be <del>most</del> least relevant.
-                </dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2015</dt>
-                <dd class="entry-detail">I applied to Missouri S&T and got accepted for the Computer Science program. Also took
-                  AP Computer Science and solidified my programming foundation further with Java.
-                </dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2016</dt>
-                <dd class="entry-detail">Began my journey at S&T.
-                </dd>
-              </dl>
-              <dl class="entry">
-                <dt class="entry-title">2018</dt>
-                <dd class="entry-detail">Joined ACM SIG.com at the beginning of the spring semester and interned at RGA as a
-                  software engineer intern during the summer.
-                </dd>
-              </dl>
-            </div>
-            <h2 className='sub-header'>EXPERIENCE</h2>
-            <p className='body-text'>
-              <div className='experience'>
-                Reinsurance Group of America, Incorporated <span className='date'>June - August 2018</span>
-                <br /><span className='role'>Software Development Engineer Intern</span><br />
-              </div>
-              <div className='experience'>
-                ACM SIG.com <span className='date'>January 2018 - Present</span>
-                <br /><span className='role'>Web Developer</span><br />
-              </div>
-              <div className='experience'>
-                ACM SIG-Game <span className='date'>January - May 2017</span>
-                <br /><span className='role'>AI Developer</span><br />
-              </div>
-              <div className='experience'>
-                Mars Rover Design Team <span className='date'>August - December 2016</span>
-                <br /><span className='role'>Embedded Programmer</span><br />
-              </div>
-            </p>
-            <h2 className='sub-header'>PROJECTS</h2>
-            <p className='body-text'>
-              <div className='project'>
-                <img src={require('./../images/chill.png')} alt='chill'/>
-                <div className='project-text'>
-                  <h2>Chill</h2>
-                  <p className='project-detail'>
-                    A website that emulates the function of Netflix in order to utilize and show the group's understanding
-                    of database design and implementation.
-                  </p>
-                  <p className='tech-stack'>
-                    Tech Stack: HTML, CSS, PHP, JavaScript, jQuery, MySQL
-                  </p>
-                  <a href='https://github.com/dmgardiner25/Chill-CS2300' className='button github' target='_blank' rel="noopener noreferrer"><p className='button-text'>GitHub</p></a>
-                  <a href='http://dmgardiner.com/Chill' className='button demo' target='_blank' rel="noopener noreferrer"><p className='button-text'>Demo</p></a>
-                </div>
-              </div>
-              <div className='project'>Currently working on some Neural Network projects, check back soon!</div>
-            </p>
-            <h2 className='sub-header'>SKILLS</h2>
-            <p className='body-text'>
-              <div className='skills'>
-                <div className='skill'>
-                  <h2 className='skill-type'>LANGUAGES</h2>
-                  <p>C++</p>
-                  <p>Java</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>JavaScript</p>
-                  <p>SQL</p>
-                  <p>Python</p>
-                  <p>C#</p>
-                  <p><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
-                </div>
-                <div className='skill'>
-                  <h2 className='skill-type'>FRAMEWORKS</h2>
-                  <p>React</p>
-                  <p>Node.js</p>
-                  <p>Vue.js</p>
-                  <p>Django</p>
-                </div>
-                <div className='skill'>
-                  <h2 className='skill-type'>SOFTWARE</h2>
-                  <p>Git</p>
-                  <p>Bash</p>
-                  <p>Windows</p>
-                  <p>Ubuntu</p>
-                  <p>Microsoft Office</p>
-                  <p>Microsoft TFS</p>
-                </div>
-                <div className='skill'>
-                  <h2 className='skill-type'>OTHER</h2>
-                  <p>Agile/Scrum</p>
-                  <p>Public Speaking</p>
-                  <p>Leadership</p>
-                  <p>Volunteer</p>
-                </div>
-              </div>
-            </p>
           </div>
+          <h2 className='sub-header'>HISTORY</h2>
+          <Entries />
+          <h2 className='sub-header'>EXPERIENCE</h2>
+          <Experiences />
+          <h2 className='sub-header'>PROJECTS</h2>
+          <Projects />
+          <h2 className='sub-header'>SKILLS</h2>
+          <Skills />
         </div>
+      </div>
+    );
+  }
+}
+
+class Entries extends React.Component {
+  render() {
+    return (
+      <div className="wrapper">
+        <div className="timeline">
+          {
+            entries.entries.map((entry, i) => {
+              return (
+                <dl className="entry" key={i}>
+                  <dt className="entry-title">{entry.year}</dt>
+                  <dd className="entry-detail" dangerouslySetInnerHTML={ { __html: entry.detail } }></dd>
+                </dl>
+              );
+            })
+          }
+        </div>
+      </div>
+    );
+  }
+}
+
+class Experiences extends React.Component {
+  render() {
+    return (
+      <div className='body-text'>
+        {
+          experiences.experiences.map((experience, i) => {
+            return (
+              <div className='experience' key={i}>
+                {experience.org} <span className='date'>{experience.dates}</span>
+                <br /><span className='role'>{experience.position}</span><br />
+              </div>
+            );
+          })
+        }
+      </div>
+    );
+  }
+}
+
+class Projects extends React.Component {
+  render() {
+    return (
+      <div className='body-text'>
+        {
+          projects.projects.map((project, i) => {
+            return (
+              <div className='project' key={i}>
+                <img src={require('./../images/' + project.url)} alt={project.alt}/>
+                <div className='project-text'>
+                  <h2>{project.title}</h2>
+                  <p className='project-detail'>{project.detail}</p>
+                  <p className='tech-stack'>Tech Stack: {project.stack}</p>
+                  <a href={project.github} className='button github' target='_blank' rel="noopener noreferrer"><p className='button-text'>GitHub</p></a>
+                  <a href={project.demo} className='button demo' target='_blank' rel="noopener noreferrer"><p className='button-text'>Demo</p></a>
+                </div>
+              </div>
+            );
+          })
+        }
+        <div className='project'>Currently working on some Neural Network projects, check back soon!</div>
+      </div>
+    );
+  }
+}
+
+class Skills extends React.Component {
+  componentDidMount() {
+    this.forceUpdate();
+  }
+
+  render() {
+    return (
+      <div className='body-text'>
+        <div className='skills'>
+          {
+            skills.skills.map((skill, i) => {
+              return (
+                <div className='skill'>
+                  <h2 className='skill-type'>{skill.title}</h2>
+                  {
+                    skill.list.map((l, i) => {
+                      return (
+                        <p dangerouslySetInnerHTML={ { __html: l } }></p>
+                      );
+                    })
+                  }
+                </div>
+              );
+            })
+          }
+        </div>
+        <span className="latex">L<sup>a</sup>T<sub>e</sub>X</span>
       </div>
     );
   }

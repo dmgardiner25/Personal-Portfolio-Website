@@ -1,0 +1,11 @@
+{ "projects": [
+  {
+    "title": "Chill",
+    "url": "chill.png",
+    "alt": "chill",
+    "detail": "A website that emulates the function of Netflix in order to utilize and show the group's understanding of database design and implementation.",
+    "stack": "Tech Stack: HTML, CSS, PHP, JavaScript, jQuery, MySQL",
+    "github": "https://github.com/dmgardiner25/Chill-CS2300",
+    "demo": "http://dmgardiner.com/Chill"
+  }
+]}

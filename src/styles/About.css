@@ -26,6 +26,7 @@
 }
 
 .body-text {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -149,7 +150,7 @@
 .timeline:before {
   content: "";
   width: 4px;
-  height: 91%;
+  height: 90%;
   background: #838383;
   position: absolute;
   top: 20px;
