@@ -142,12 +142,12 @@ class Skills extends React.Component {
           {
             skills.skills.map((skill, i) => {
               return (
-                <div className='skill'>
+                <div className='skill' key={i}>
                   <h2 className='skill-type'>{skill.title}</h2>
                   {
                     skill.list.map((l, i) => {
                       return (
-                        <p dangerouslySetInnerHTML={ { __html: l } }></p>
+                        <p dangerouslySetInnerHTML={ { __html: l } } key={i}></p>
                       );
                     })
                   }
