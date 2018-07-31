@@ -1,7 +1,7 @@
 { "skills": [
   {
     "title": "Languages",
-    "list": ["C++", "Java", "HTML", "CSS", "JavaScript", "SQL", "Python", "C#", "C"]
+    "list": ["C++", "Java", "HTML", "CSS", "JavaScript", "SQL", "Python", "C#", "C", "<span>L<sup>a</sup>T<sub>e</sub>X</span>"]
   },
   {
     "title": "Frameworks",
