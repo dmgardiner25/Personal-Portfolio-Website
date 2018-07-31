@@ -8,15 +8,6 @@
   background: #f4f4f4;
 }
 
-.resume-content {
-  width: 100%;
-  overflow: hidden;
-}
-
 .resume {
-  position: absolute;
-  right: -17px;
-  top: 0;
-  bottom: -17px;
-  left: 0;
+  width: 100%;
 }
