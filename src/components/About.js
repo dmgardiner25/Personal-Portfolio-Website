@@ -30,8 +30,8 @@ class About extends React.Component {
             for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
             ACM SIG.com. Outside of the world of Computer Science, I enjoy casually playing video games, listening to music, and
             taking my dog on hikes.
-            <br /><br />
-            <u>Fun Facts</u>:
+            <br />
+            <p className='facts'>Fun Facts:</p>
             <ul>
               <li>My biggest passion behind Computer Science is space and the aerospace industry. For as long as I can
                 remember, I've been staring up into the night sky and being amazed at what I see. If I hadn't been introduced
@@ -92,7 +92,8 @@ class Experiences extends React.Component {
           experiences.experiences.map((experience, i) => {
             return (
               <div className='experience' key={i}>
-                {experience.org} <span className='date'>{experience.dates}</span>
+                <span className='org'>{experience.org}</span>
+                <span className='date'>{experience.dates}</span>
                 <br /><span className='role'>{experience.position}</span><br />
               </div>
             );
@@ -123,7 +124,7 @@ class Projects extends React.Component {
             );
           })
         }
-        <div className='project'>Currently working on some Neural Network projects, check back soon!</div>
+        <p className='current'>Currently working on some Neural Network projects, check back soon!</p>
       </div>
     );
   }
@@ -155,7 +156,6 @@ class Skills extends React.Component {
             })
           }
         </div>
-        <span className="latex">L<sup>a</sup>T<sub>e</sub>X</span>
       </div>
     );
   }

@@ -36,6 +36,10 @@
   font-weight: bold;
 }
 
+.facts {
+  text-decoration: underline;
+}
+
 .date {
   float: right;
 }
@@ -116,21 +120,21 @@
   color: #B5C9D4;
 }
 
-.tex sub, .latex sub, .latex sup {
+.skill sub, .skill sub, .skill sup {
   text-transform: uppercase;
 }
 
-.tex sub, .latex sub {
+.skill sub {
   vertical-align: -0.5ex;
   margin-left: -0.1667em;
   margin-right: -0.125em;
 }
 
-.tex, .latex, .tex sub, .latex sub {
+.skill span, .skill sub {
   font-size: 1em;
 }
 
-.latex sup {
+.skill sup {
   font-size: 0.85em;
   vertical-align: 0.15em;
   margin-left: -0.36em;
@@ -139,7 +143,6 @@
 
 .wrapper {
   margin: 3.125em auto;
-  padding: 1em 5em 1em;
   max-width: 1000px;
 }
 
@@ -150,10 +153,14 @@
 .timeline:before {
   content: "";
   width: 4px;
-  height: 90%;
+  height: 95%;
   background: #838383;
   position: absolute;
-  top: 20px;
+  top: -7px;
+}
+
+.current {
+  margin-top: 100px;
 }
 
 .entry {
@@ -192,61 +199,250 @@
   text-align: right;
 }
 
-@supports (display: grid) {
-  @media (min-width: 768px) {
-    .timeline {
-      display: grid;
-      grid-gap: 2em;
-      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 ." ". entry7" "entry8 ." ". entry9";
-    }
+@media (min-width: 682px) {
+  .timeline {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 ." ". entry7" "entry8 ." ". entry9";
+  }
 
+  .timeline:before {
+    left: 49.5%;
+  }
+
+  .entry:nth-child(1) {
+    grid-area: entry1;
+  }
+
+  .entry:nth-child(2) {
+    grid-area: entry2;
+  }
+
+  .entry:nth-child(3) {
+    grid-area: entry3;
+  }
+
+  .entry:nth-child(4) {
+    grid-area: entry4;
+  }
+
+  .entry:nth-child(5) {
+    grid-area: entry5;
+  }
+
+  .entry:nth-child(6) {
+    grid-area: entry6;
+  }
+
+  .entry:nth-child(7) {
+    grid-area: entry7;
+  }
+
+  .entry:nth-child(8) {
+    grid-area: entry8;
+  }
+
+  .entry:nth-child(9) {
+    grid-area: entry9;
+  }
+
+  .entry:nth-of-type(odd):before {
+    left: -26px;
+  }
+
+  .entry:nth-of-type(even):before {
+    right: -20px;
+  }
+
+  @media (max-width: 1306px) {
+    .entry:nth-of-type(even):before {
+      right: -21px;
+    }
+  }
+
+  @media (max-width: 1260px) {
+    .entry:nth-of-type(even):before {
+      right: -21.5px;
+    }
+  }
+
+  @media (max-width: 1159px) {
     .timeline:before {
-      left: 49.5%;
-    }
-
-    .entry:nth-child(1) {
-      grid-area: entry1;
-    }
-
-    .entry:nth-child(2) {
-      grid-area: entry2;
-    }
-
-    .entry:nth-child(3) {
-      grid-area: entry3;
-    }
-
-    .entry:nth-child(4) {
-      grid-area: entry4;
-    }
-
-    .entry:nth-child(5) {
-      grid-area: entry5;
-    }
-
-    .entry:nth-child(6) {
-      grid-area: entry6;
-    }
-
-    .entry:nth-child(7) {
-      grid-area: entry7;
-    }
-
-    .entry:nth-child(8) {
-      grid-area: entry8;
-    }
-
-    .entry:nth-child(9) {
-      grid-area: entry9;
+      height: 94%;
     }
 
     .entry:nth-of-type(odd):before {
-      left: -25px;
+      left: -25.5px;
     }
 
     .entry:nth-of-type(even):before {
       right: -21px;
     }
   }
+
+  @media (max-width: 999px) {
+    .entry:nth-of-type(even):before {
+      right: -22.5px;
+    }
+
+    .entry:nth-of-type(odd):before {
+      left: -25px;
+    }
+
+
+    .entry:nth-of-type(even):before {
+      right: -21.5px;
+    }
+  }
+
+  @media (max-width: 889px) {
+    .timeline:before {
+      height: 93%;
+    }
+
+    .entry:nth-of-type(even):before {
+      right: -21.5px;
+    }
+
+    .entry:nth-of-type(odd):before {
+      left: -25px;
+    }
+  }
+
+  @media (max-width: 785px) {
+    .timeline:before {
+      height: 92%;
+    }
+
+    .entry:nth-of-type(even):before {
+      right: -22px;
+    }
+
+    .entry:nth-of-type(odd):before {
+      left: -24px;
+    }
+
+    .experience {
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    .date {
+      font-style: italic;
+      float: left;
+    }
+
+    .role {
+      float: left;
+    }
+  }
+
+  @media (max-width: 741px) {
+    .timeline:before {
+      height: 93%;
+    }
+
+    .entry:nth-of-type(even):before {
+      right: -22.5px;
+    }
+
+    .entry:nth-of-type(odd):before {
+      left: -24px;
+    }
+  }
 }
 
+@media (max-width: 785px) {
+  .experience {
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+  }
+
+  .org {
+    width: 100%;
+  }
+
+  .date {
+    width: 100%;
+    font-style: italic;
+    float: left;
+  }
+
+  .role {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills {
+    display: inline;
+  }
+
+  .skill {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 682px) {
+  .timeline {
+    grid-template-areas: ".  entry1" ". entry2" ". entry3" ". entry4" ". entry5" ". entry6" ". entry7" ". entry8" ". entry9";
+  }
+
+  .timeline:before {
+    height: 95%;
+  }
+
+  .entry-detail {
+    margin-bottom: 25px;
+    margin-top: -10px;
+  }
+
+  .entry:nth-child(2n) {
+    text-align: left;
+  }
+
+  .entry:before {
+    top: 10px;
+    left: -5.5px;
+  }
+}
+
+@media (max-width: 628px) {
+  .about {
+    top: 0;
+  }
+
+  .timeline:before {
+    height: 94%;
+  }
+
+  .project {
+    display: inline-block;
+  }
+
+  .project img {
+    width: 95%;
+  }
+
+  .project-text {
+    margin-left: 0;
+  }
+
+  .current {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 487px) {
+  .timeline:before {
+    height: 93%;
+  }
+}
+
+@media (max-width: 436px) {
+  .timeline:before {
+    height: 92%;
+  }
+}
