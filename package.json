@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "proxyquire": "^2.0.1",
     "react": "^16.4.1",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.1",
@@ -12,11 +13,12 @@
     "react-router-dom": "^4.3.1",
     "react-script-tag": "^1.1.2",
     "react-scripts": "1.1.4",
+    "rewire": "^4.0.1",
     "styled-components": "^3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start --history-api-fallback",
-    "build": "react-scripts build",
+    "start": "node ./src/scripts/customized-config start",
+    "build": "node ./src/scripts/customized-config build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
