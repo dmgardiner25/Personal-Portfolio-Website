@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resume} />
         <Route path="/chill" component={() => window.location = 'http://dmgardiner.com/Chill'} />
-        <Route component={Home}/>
+        <Route path="*" component={Home}/>
       </Switch>
     </div>
   </Router>,
