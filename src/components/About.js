@@ -1,5 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { withRouter, Link } from 'react-router-dom';
 import entries from './../data/entries.json';
 import experiences from './../data/experiences.json';
 import projects from './../data/projects.json';
@@ -7,57 +10,79 @@ import skills from './../data/skills';
 import './../styles/About.css'
 
 class About extends React.Component {
+  static propTypes = {
+    history: PropTypes.object.isRequired
+  }
+
+  componentDidMount() {
+    const { history } = this.props
+    history.push({ pathname: '/about' });
+  }
+
   render() {
     return (
       <div className='about'>
         <Helmet>
           <title>David Gardiner | About</title>
         </Helmet>
-        <div className='about-content'>
-          <h1 className='header'>About</h1>
-          <h2 className='sub-header'>OVERVIEW</h2>
-          <p className='body-text'>
-            I'm a student at the Missouri University of Science and Technology (Missouri S&T)
-            where I'll be going into my junior year of working towards a bachelor's degree in
-            Computer Science. Most of my experience is with Software Engineering and object oriented
-            languages thanks to my experience in school and a summer internship. The beginning of
-            2018 introduced me to Web Development, which is something that I've found quite a passion
-            for fairly recently.
-          </p>
-          <h2 className='sub-header'>THE FUN STUFF</h2>
-          <div className='body-text'>
-            When I'm not working or studying for school, you can usually find me working on my own projects or working on the website
-            for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
-            ACM SIG.com. Outside of the world of Computer Science, I enjoy casually playing video games, listening to music, and
-            taking my dog on hikes.
-            <br />
-            <p className='facts'>Fun Facts:</p>
-            <ul>
-              <li>My biggest passion behind Computer Science is space and the aerospace industry. For as long as I can
-                remember, I've been staring up into the night sky and being amazed at what I see. If I hadn't been introduced
-                to programming, I'd most likely be studying Aerospace Engineering. Working for NASA, SpaceX, Boeing, or Garmin's
-                Aviation team would definitely be something that I would love to do at some point.
-              </li>
+        <Link className='arrow link-left' to="/">
+          <img className={'left-arrow display-arrow'} src={require('./../images/left_arrow_black.png')} alt='left arrow'/>
+        </Link>
+        <Link className='arrow link-right' to="/resume">
+          <img className={'right-arrow display-arrow'} src={require('./../images/right_arrow_black.png')} alt='right arrow'/>
+        </Link>
+        <ReactCSSTransitionGroup
+          transitionAppear={true}
+          transitionAppearTimeout={600}
+          transitionEnterTimeout={600}
+          transitionLeaveTimeout={200}
+          transitionName={'SlideIn'}>
+          <div className='about-content'>
+            <h1 className='header'>About</h1>
+            <h2 className='sub-header'>OVERVIEW</h2>
+            <p className='body-text'>
+              I'm a student at the Missouri University of Science and Technology (Missouri S&T)
+              where I'll be going into my junior year of working towards a bachelor's degree in
+              Computer Science. Most of my experience is with Software Engineering and object oriented
+              languages thanks to my experience in school and a summer internship. The beginning of
+              2018 introduced me to Web Development, which is something that I've found quite a passion
+              for fairly recently.
+            </p>
+            <h2 className='sub-header'>THE FUN STUFF</h2>
+            <div className='body-text'>
+              When I'm not working or studying for school, you can usually find me working on my own projects or working on the website
+              for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
+              ACM SIG.com. Outside of the world of Computer Science, I enjoy casually playing video games, listening to music, and
+              taking my dog on hikes.
               <br />
-              <li>I love traveling and flying in planes, probably because I was introduced to it at a fairly young age. Almost
-                every year, we drive or fly up to North Dakota to see family, I've been to Mexico three times, went to Rome and
-                Athens for my senior trip, and went on a twelve-day road trip out to San Francisco where my friends and I tent
-                camped in national parks along the way.
-              </li>
-              <br />
-              <li>I have a one year old English Cocker Spaniel named Ramsey.
-              </li>
-            </ul>
+              <p className='facts'>Fun Facts:</p>
+              <ul>
+                <li>My biggest passion behind Computer Science is space and the aerospace industry. For as long as I can
+                  remember, I've been staring up into the night sky and being amazed at what I see. If I hadn't been introduced
+                  to programming, I'd most likely be studying Aerospace Engineering. Working for NASA, SpaceX, Boeing, or Garmin's
+                  Aviation team would definitely be something that I would love to do at some point.
+                </li>
+                <br />
+                <li>I love traveling and flying in planes, probably because I was introduced to it at a fairly young age. Almost
+                  every year, we drive or fly up to North Dakota to see family, I've been to Mexico three times, went to Rome and
+                  Athens for my senior trip, and went on a twelve-day road trip out to San Francisco where my friends and I tent
+                  camped in national parks along the way.
+                </li>
+                <br />
+                <li>I have a one year old English Cocker Spaniel named Ramsey.
+                </li>
+              </ul>
+            </div>
+            <h2 className='sub-header'>HISTORY</h2>
+            <Entries />
+            <h2 className='sub-header'>EXPERIENCE</h2>
+            <Experiences />
+            <h2 className='sub-header'>PROJECTS</h2>
+            <Projects />
+            <h2 className='sub-header'>SKILLS</h2>
+            <Skills />
           </div>
-          <h2 className='sub-header'>HISTORY</h2>
-          <Entries />
-          <h2 className='sub-header'>EXPERIENCE</h2>
-          <Experiences />
-          <h2 className='sub-header'>PROJECTS</h2>
-          <Projects />
-          <h2 className='sub-header'>SKILLS</h2>
-          <Skills />
-        </div>
+        </ReactCSSTransitionGroup>
       </div>
     );
   }
@@ -161,4 +186,4 @@ class Skills extends React.Component {
   }
 }
 
-export default About;
+export default withRouter(About);

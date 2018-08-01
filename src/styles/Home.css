@@ -10,6 +10,7 @@
   height: 100%;
   right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
   overflow-y: scroll;
+  z-index: 1;
 }
 
 .home-content {
@@ -19,6 +20,14 @@
   right: 35px;
   display: flex;
   justify-content: flex-end;
+  backface-visibility: hidden;
+}
+
+.arrow {
+  position: fixed;
+  top: 42%;
+  right: -17px;
+  display: none;
 }
 
 .stacked-text {
@@ -48,7 +57,7 @@
   font-size: 12px;
   position: absolute;
   z-index: 3;
-  right: 1%;
+  right: 2%;
   bottom: -1%;
   text-align: right;
 }
@@ -88,9 +97,26 @@
 
 @media only screen and (max-width: 682px)  {
   .home-content {
-    right: 0;
-    top: 20px;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
     justify-content: center;
+  }
+
+  .arrow {
+    display: flex;
+  }
+
+  .right-arrow {
+    margin-right: 10px;
+  }
+
+  .display-arrow {
+    display: inherit;
+  }
+
+  .hide-arrow {
+    display: none;
   }
 
   .profile {
@@ -102,10 +128,13 @@
   .stacked-text {
     position: absolute;
     text-align: center;
+    justify-content: center;
     top: 100%;
     color: white;
     text-shadow: 1px 1px 1px black;
-    max-width: 70%;
+    margin: 0;
+    width: 67%;
+    z-index: 3;
   }
 
   br {
@@ -113,12 +142,12 @@
   }
 
   .home p {
-    font-size: 8px;
+    display: none;
   }
 }
 
-@media only screen and (max-height: 463px)  {
-  .home p {
-    display: none;
+@media only screen and (max-height: 440px)  {
+  .stacked-text h2 {
+    font-size: 14px;
   }
 }

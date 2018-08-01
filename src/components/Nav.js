@@ -25,13 +25,6 @@ class Nav extends Component {
     this.setState({ activeTab: tabNum })
   }
 
-  componentDidMount() {
-    var path = window.location.pathname;
-    if(path !== '/' && path !== '/about' && path !== '/resume') {
-      window.location.pathname = '/';
-    }
-  }
-
   setActive = (tabNum) => {
     this.setState({ activeTab: tabNum });
   }

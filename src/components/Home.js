@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { withRouter, Link } from 'react-router-dom';
 import './../styles/Home.css';
 
 class Home extends React.Component {
+  static propTypes = {
+    history: PropTypes.object.isRequired
+  }
+
+  componentDidMount() {
+    this.props.history.push({ pathname: '/' });
+  }
+
   render() {
     return (
       <div className='home'>
         <Helmet>
           <title>David Gardiner | Home</title>
         </Helmet>
+        <Link className='arrow' to="/about">
+          <img className={'right-arrow display-arrow'} src={require('./../images/right_arrow.png')} alt='right arrow'/>
+        </Link>
         <ReactCSSTransitionGroup
           transitionAppear={true}
           transitionAppearTimeout={600}
@@ -42,4 +55,4 @@ class HomeContent extends React.Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);
