@@ -38,7 +38,7 @@ class About extends React.Component {
           transitionLeaveTimeout={200}
           transitionName={'SlideIn'}>
           <div className='about-content'>
-            <h1 className='header'>About</h1>
+            <h1 className='about-header'>About</h1>
             <h2 className='sub-header'>OVERVIEW</h2>
             <p className='body-text'>
               I'm a student at the Missouri University of Science and Technology (Missouri S&T)
