@@ -6,6 +6,15 @@
     "detail": "A website that emulates the function of Netflix in order to utilize and show the group's understanding of database design and implementation.",
     "stack": "Tech Stack: HTML, CSS, PHP, JavaScript, jQuery, MySQL",
     "github": "https://github.com/dmgardiner25/Chill-CS2300",
-    "demo": "http://dmgardiner.com/Chill"
+    "demo": "http://davidgardiner.me/chill"
+  },
+  {
+    "title": "Reddit with React",
+    "url": "reddit.png",
+    "alt": "reddit",
+    "detail": "A tutorial created to teach new member of ACM SIG-Web the basic of React.",
+    "stack": "Tech Stack: HTML, CSS, React",
+    "github": "https://github.com/dmgardiner25/Reddit-With-React",
+    "demo": "http://davidgardiner.me/reddit"
   }
 ]}
