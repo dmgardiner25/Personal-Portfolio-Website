@@ -23,7 +23,7 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/resume" component={Resume} />
         <Route path="/reddit" component={() => window.location = 'https://friendly-meninsky-bca341.netlify.com/'} />
-        <Route path="/chill" component={() => window.location = 'http://davidgardiner.me/chill'} />
+        <Route path="/chill" component={() => window.location = 'http://chill.epizy.com/'} />
         <Route path="*" component={Home}/>
       </Switch>
     </div>
