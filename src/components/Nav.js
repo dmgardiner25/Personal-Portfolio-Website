@@ -20,7 +20,8 @@ class Nav extends Component {
       tabNum = 2;
     else if(path !== '/') {
       tabNum = 0;
-      window.location.pathname = '/';
+      if(path !== '/chill')
+        window.location.pathname = '/';
     }
     this.setState({ activeTab: tabNum })
   }
