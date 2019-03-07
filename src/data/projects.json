@@ -5,7 +5,7 @@
     "alt": "swole.tech",
     "detail": "A workout-related social media application that allows coaches to create and manage workouts for their teams. Log in as 'kim' with no password to see demo content. Created for the PickHacks hackathon at Missouri S&T.",
     "stack": "React, CSS, Flask, Peewee, PostgreSQL",
-    "github": "https://github.com/dmgardiner25/SwoleTech",
+    "github": "https://github.com/Durian-Inc/swole.tech",
     "demo": "https://swole.tech/login"
   },
   {
