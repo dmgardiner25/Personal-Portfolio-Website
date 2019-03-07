@@ -21,7 +21,7 @@ class Home extends React.Component {
           <title>David Gardiner | Home</title>
         </Helmet>
         <Link className='arrow' to="/about">
-          <img className={'right-arrow display-arrow'} src={require('./../images/right_arrow.png')} alt='right arrow'/>
+          <img className={'right-arrow display-arrow'} src={require('./../images/right_arrow_black.png')} alt='right arrow'/>
         </Link>
         <ReactCSSTransitionGroup
           transitionAppear={true}
@@ -31,7 +31,6 @@ class Home extends React.Component {
           transitionName={'SlideIn'}>
           <HomeContent />
         </ReactCSSTransitionGroup>
-        <p>Like this photo? Check out more of Amanda Frazier's work <a target="_blank" rel="noopener noreferrer" href="http://amandafrazierwebdev.com">here</a>.</p>
       </div>
     );
   }
@@ -49,7 +48,7 @@ class HomeContent extends React.Component {
             that involves programming.
           </h2>
         </div>
-        <img className='profile' src={require('./../images/suit_green_cropped.jpg')} alt='profile'/>
+        <img className='profile' src={require('./../images/pic.jpg')} alt='profile'/>
       </div>
     );
   }
