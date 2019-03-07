@@ -43,7 +43,7 @@ class About extends React.Component {
             <p className='body-text'>
               I'm a student at the Missouri University of Science and Technology (Missouri S&T)
               where I'm currently in my second to last semester of working towards a bachelor's degree in
-              Computer Science. Most of my experience is in software engineering and object oriented
+              Computer Science and graduating in December of 2019. Most of my experience is in software engineering and object oriented
               design thanks to my experience in school and two previous internships. While that is what I'm
               most experienced in, I'm starting to really focus on web development, particularly front end development.
             </p>
