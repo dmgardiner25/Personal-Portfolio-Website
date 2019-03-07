@@ -1,20 +1,29 @@
 { "projects": [
   {
-    "title": "Chill",
-    "url": "chill.png",
-    "alt": "chill",
-    "detail": "A website that emulates the function of Netflix in order to utilize and show the group's understanding of database design and implementation.",
-    "stack": "Tech Stack: HTML, CSS, PHP, JavaScript, jQuery, MySQL",
-    "github": "https://github.com/dmgardiner25/Chill-CS2300",
-    "demo": "http://davidgardiner.me/chill"
+    "title": "swole.tech",
+    "url": "swoletech.png",
+    "alt": "swole.tech",
+    "detail": "A workout-related social media application that allows coaches to create and manage workouts for their teams. Log in as 'kim' with no password to see demo content. Created for the PickHacks hackathon at Missouri S&T.",
+    "stack": "React, CSS, Flask, Peewee, PostgreSQL",
+    "github": "https://github.com/dmgardiner25/SwoleTech",
+    "demo": "https://swole.tech/login"
   },
   {
     "title": "Reddit with React",
     "url": "reddit.png",
     "alt": "reddit",
-    "detail": "A tutorial created to teach new members of ACM SIG-Web the basics of React.",
-    "stack": "Tech Stack: HTML, CSS, React",
+    "detail": "A tutorial created to teach new members of ACM Web the basics of React.",
+    "stack": "HTML, CSS, React",
     "github": "https://github.com/dmgardiner25/Reddit-With-React",
     "demo": "http://davidgardiner.me/reddit"
+  },
+  {
+    "title": "Chill",
+    "url": "chill.png",
+    "alt": "chill",
+    "detail": "A website that emulates the function of Netflix in order to utilize and show the group's understanding of database design and implementation.",
+    "stack": "HTML, CSS, PHP, JavaScript, jQuery, MySQL",
+    "github": "https://github.com/dmgardiner25/Chill-CS2300",
+    "demo": ""
   }
 ]}

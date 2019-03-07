@@ -50,6 +50,10 @@
   font-weight: bold;
 }
 
+.body-text img {
+  max-width: 300px;
+}
+
 .facts {
   text-decoration: underline;
 }
@@ -173,10 +177,6 @@
   top: -7px;
 }
 
-.current {
-  margin-top: 100px;
-}
-
 .entry {
   position: relative;
   padding-left: 1.5em;
@@ -217,7 +217,7 @@
   .timeline {
     display: grid;
     grid-gap: 2em;
-    grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 ." ". entry7" "entry8 ." ". entry9";
+    grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 ." ". entry7" "entry8 ." ". entry9" "entry10 .";
   }
 
   .timeline:before {
@@ -258,6 +258,10 @@
 
   .entry:nth-child(9) {
     grid-area: entry9;
+  }
+
+  .entry:nth-child(10) {
+    grid-area: entry10;
   }
 
   .entry:nth-of-type(odd):before {

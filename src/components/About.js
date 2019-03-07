@@ -42,34 +42,39 @@ class About extends React.Component {
             <h2 className='sub-header'>OVERVIEW</h2>
             <p className='body-text'>
               I'm a student at the Missouri University of Science and Technology (Missouri S&T)
-              where I'll be going into my junior year of working towards a bachelor's degree in
-              Computer Science. Most of my experience is with Software Engineering and object oriented
-              languages thanks to my experience in school and a summer internship. The beginning of
-              2018 introduced me to Web Development, which is something that I've found quite a passion
-              for fairly recently.
+              where I'm currently in my second to last semester of working towards a bachelor's degree in
+              Computer Science. Most of my experience is in software engineering and object oriented
+              design thanks to my experience in school and two previous internships. While that is what I'm
+              most experienced in, I'm starting to really focus on web development, particularly front end development.
             </p>
             <h2 className='sub-header'>THE FUN STUFF</h2>
             <div className='body-text'>
-              When I'm not working or studying for school, you can usually find me working on my own projects or working on the website
+              When I'm not working in the Computer Science Department office as a student worker, grading/creating assignments for CS 3100 (Software Engineering), or
+              doing schoolwork, you can usually find me working on my own projects or working on the website
               for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
-              ACM SIG.com. Outside of the world of Computer Science, I enjoy casually playing video games, listening to music, and
-              taking my dog on hikes.
+              ACM Web. Recently, I've become quite fond of hackathons and look forward to participating in as many as I can! Outside of
+              the world of Computer Science, I enjoy hiking/camping, listening to music, and casually playing video games.
               <br />
               <p className='facts'>Fun Facts:</p>
               <ul>
                 <li>My biggest passion behind Computer Science is space and the aerospace industry. For as long as I can
                   remember, I've been staring up into the night sky and being amazed at what I see. If I hadn't been introduced
-                  to programming, I'd most likely be studying Aerospace Engineering. Working for NASA, SpaceX, Boeing, or Garmin's
-                  Aviation team would definitely be something that I would love to do at some point.
+                  to programming, I'd most likely be studying Aerospace Engineering. If it goes to show how passionate I am about
+                  space, I even have a space related tattoo (that can be covered, of course <span role="img" aria-label="wink emoji">😉</span>).
                 </li>
                 <br />
                 <li>I love traveling and flying in planes, probably because I was introduced to it at a fairly young age. Almost
                   every year, we drive or fly up to North Dakota to see family, I've been to Mexico three times, went to Rome and
                   Athens for my senior trip, and went on a twelve-day road trip out to San Francisco where my friends and I tent
-                  camped in national parks along the way.
+                  camped in national parks along the way last year. This summer, I'll be taking a trip to the Rockies and will be hiking
+                  my first two 14ers!
                 </li>
                 <br />
-                <li>I have a one year old English Cocker Spaniel named Ramsey.
+                <li>I have a two year old English Cocker Spaniel named Ramsey, a Ball Python named Saturn, and a Leachie Gecko named Avocado.
+                </li>
+                <br />
+                <li>I'm a pescatarian, meaning the only meat I eat is fish. The main reasons for this are because of the environmental
+                  impact the meat industry has as well as the health benefits (eating red meat always gave me headaches).
                 </li>
               </ul>
             </div>
@@ -135,21 +140,33 @@ class Projects extends React.Component {
       <div className='body-text'>
         {
           projects.projects.map((project, i) => {
-            return (
-              <div className='project' key={i}>
-                <img src={require('./../images/' + project.url)} alt={project.alt}/>
-                <div className='project-text'>
-                  <h2>{project.title}</h2>
-                  <p className='project-detail'>{project.detail}</p>
-                  <p className='tech-stack'>Tech Stack: {project.stack}</p>
-                  <a href={project.github} className='button github' target='_blank' rel="noopener noreferrer"><p className='button-text'>GitHub</p></a>
-                  <a href={project.demo} className='button demo' target='_blank' rel="noopener noreferrer"><p className='button-text'>Demo</p></a>
+            if(project.demo !== '')
+              return (
+                <div className='project' key={i}>
+                  <img src={require('./../images/' + project.url)} alt={project.alt}/>
+                  <div className='project-text'>
+                    <h2>{project.title}</h2>
+                    <p className='project-detail'>{project.detail}</p>
+                    <p className='tech-stack'>Tech Stack: {project.stack}</p>
+                    <a href={project.github} className='button github' target='_blank' rel="noopener noreferrer"><p className='button-text'>GitHub</p></a>
+                    <a href={project.demo} className='button demo' target='_blank' rel="noopener noreferrer"><p className='button-text'>Demo</p></a>
+                  </div>
                 </div>
-              </div>
-            );
+              );
+            else
+              return (
+                <div className='project' key={i}>
+                  <img src={require('./../images/' + project.url)} alt={project.alt}/>
+                  <div className='project-text'>
+                    <h2>{project.title}</h2>
+                    <p className='project-detail'>{project.detail}</p>
+                    <p className='tech-stack'>Tech Stack: {project.stack}</p>
+                    <a href={project.github} className='button github' target='_blank' rel="noopener noreferrer"><p className='button-text'>GitHub</p></a>
+                  </div>
+                </div>
+              );
           })
         }
-        <p className='current'>Currently working on some Neural Network projects, check back soon!</p>
       </div>
     );
   }
