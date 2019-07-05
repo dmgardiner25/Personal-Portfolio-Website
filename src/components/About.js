@@ -42,10 +42,9 @@ class About extends React.Component {
             <h2 className='sub-header'>OVERVIEW</h2>
             <p className='body-text'>
               I'm a student at the Missouri University of Science and Technology (Missouri S&T)
-              where I'm currently in my second to last semester of working towards a bachelor's degree in
-              Computer Science and graduating in December of 2019. Most of my experience is in software engineering and object oriented
-              design thanks to my experience in school and two previous internships. While that is what I'm
-              most experienced in, I'm starting to really focus on web development, particularly front end development.
+              where I am happy to finally be able to say that I am going into my last semester of working towards a bachelor's degree in
+              Computer Science and graduating in December of this year. Most of my experience is in software engineering and object oriented
+              design, but I have become quite passionate about web (especially front-end) development.
             </p>
             <h2 className='sub-header'>THE FUN STUFF</h2>
             <div className='body-text'>
@@ -53,28 +52,23 @@ class About extends React.Component {
               doing schoolwork, you can usually find me working on my own projects or working on the website
               for <a className='text-link' href="http://acm.mst.edu" target="_blank" rel="noopener noreferrer">acm.mst.edu</a> with
               ACM Web. Recently, I've become quite fond of hackathons and look forward to participating in as many as I can! Outside of
-              the world of Computer Science, I enjoy hiking/camping, listening to music, and casually playing video games.
+              the world of Computer Science, I enjoy hiking, camping, listening to music, going to concerts, and playing disc golf.
               <br />
               <p className='facts'>Fun Facts:</p>
               <ul>
-                <li>My biggest passion behind Computer Science is space and the aerospace industry. For as long as I can
+                <li>My biggest passion aside from Computer Science is space and the aerospace industry. For as long as I can
                   remember, I've been staring up into the night sky and being amazed at what I see. If I hadn't been introduced
-                  to programming, I'd most likely be studying Aerospace Engineering. If it goes to show how passionate I am about
-                  space, I even have a space related tattoo (that can be covered, of course <span role="img" aria-label="wink emoji">😉</span>).
+                  to programming, I'd most likely be studying Aerospace Engineering.
                 </li>
                 <br />
                 <li>I love traveling and flying in planes, probably because I was introduced to it at a fairly young age. Almost
                   every year, we drive or fly up to North Dakota to see family, I've been to Mexico three times, went to Rome and
-                  Athens for my senior trip, and went on a twelve-day road trip out to San Francisco where my friends and I tent
-                  camped in national parks along the way last year. This summer, I'll be taking a trip to the Rockies and will be hiking
-                  my first two 14ers!
+                  Athens for my senior trip after high school, and went on a two-week-long camping road trip the past two summers. It's still in
+                  the works, but it looks like I'll be traveling the world for a few months after graduating as well!
                 </li>
                 <br />
-                <li>I have a two year old English Cocker Spaniel named Ramsey, a Ball Python named Saturn, and a Leachie Gecko named Avocado.
-                </li>
-                <br />
-                <li>I'm a pescatarian, meaning the only meat I eat is fish. The main reasons for this are because of the environmental
-                  impact the meat industry has as well as the health benefits (eating red meat always gave me headaches).
+                <li>I'm a pescatarian, meaning the only meat I eat is fish (although I still try to stay away from it when possible). The main 
+                  reasons for this are because of the environmental impact the meat industry has as well as the health benefits.
                 </li>
               </ul>
             </div>

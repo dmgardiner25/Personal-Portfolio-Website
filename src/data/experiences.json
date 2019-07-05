@@ -1,5 +1,10 @@
 { "experiences": [
   {
+    "org": "Ungerboeck Software International",
+    "dates": "December 2018 - January 2019 & May 2019 - Present",
+    "position": "Software Engineer Intern"
+  },
+  {
     "org": "CS 3100 - Software Engineering",
     "dates": "January 2019 - Present",
     "position": "Grader"
@@ -8,11 +13,6 @@
     "org": "ACM Web",
     "dates": "January 2018 - Present",
     "position": "Web Developer"
-  },
-  {
-    "org": "Ungerboeck Software International",
-    "dates": "December 2018 - January 2019",
-    "position": "Software Engineer Intern"
   },
   {
     "org": "Reinsurance Group of America, Incorporated",
